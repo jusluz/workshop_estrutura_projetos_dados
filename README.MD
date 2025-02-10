@@ -1,2 +1,1 @@
-# Workshop de estrutura de projetos de dados.
-
+# Workshop de estrutura de projetos de dados

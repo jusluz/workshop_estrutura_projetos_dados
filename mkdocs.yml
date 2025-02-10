@@ -44,9 +44,3 @@ plugins:
   - search
   - mkdocstrings:
       default_handler: python
-
-
-# Configuração do plugin de GitHub
-repo:
-  url: https://github.com/usuario/repositório
-  edit_uri: edit/main/docs/
