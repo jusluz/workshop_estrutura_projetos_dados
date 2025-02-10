@@ -1,0 +1,52 @@
+# Configuração do site
+site_name: Workshop de Estrutura de Projetos de Dados
+site_description: Descrição do site
+site_author: Julio Luz
+
+# Configuração do tema
+theme:
+  name: material
+  palette:
+    primary: brown
+  font:
+    text: Open Sans
+    code: Consolas
+  language: pt
+
+  reponame: "jusluz/workshop_estrutura_projetos_dados"
+  repo_url: "https://github.com/jusluz/workshop_estrutura_projetos_dados"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+# Configuração da navegação
+nav:
+  - Início: index.md
+  - Sobre: sobre.md
+  - Documentação: docs/
+  - Contato: contato.md
+
+# Configuração dos arquivos
+docs_dir: docs
+site_dir: site
+
+# Configuração do índice
+index:
+  - Início: index.md
+  - Sobre: sobre.md
+  - Documentação: docs/
+
+# Configuração do plugin de pesquisa
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+
+# Configuração do plugin de GitHub
+repo:
+  url: https://github.com/usuario/repositório
+  edit_uri: edit/main/docs/
