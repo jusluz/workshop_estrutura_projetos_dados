@@ -1,4 +1,10 @@
 from pipeline.extract import extract_from_excel
+from pipeline.transform import concat_data_frames
+from pipeline.load import load_to_excel
 
-lista_de_dataframe = extract_from_excel("data/input")
-print(lista_de_dataframe)
+if __name__ == "__main__":
+    data_frame_list = extract_from_excel("./data/input")
+    print(type(data_frame_list))
+    data_frame = concat_data_frames(data_frame_list)
+    print(type(data_frame_list))
+    load_to_excel(data_frame, output_path="./data/output", file_name="output")

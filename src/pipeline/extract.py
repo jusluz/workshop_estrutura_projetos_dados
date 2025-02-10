@@ -1,7 +1,7 @@
 import os # Biblioteca para manipular arquivos e pastas
 import glob # Bilioteca para listar arquivos
 
-import pandas as pd
+import pandas as pd # Biblioteca para manipulação de Data Frame
 from typing import List
 import openpyxl
 
@@ -25,7 +25,5 @@ def extract_from_excel(path: str) -> List[pd.DataFrame]:
     return data_frame_list
 
 if __name__ == "__main__":
-    data_frame_list = extract_from_excel(path="/data/input")
+    data_frame_list = extract_from_excel(path="./data/input")
     print(data_frame_list)
-    
-    
